@@ -1,7 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
     const articleList = document.getElementById("article-list");
-    const response = await fetch("data/blog_data.json");
+    const response = await fetch("./data/blog_data.json");
+
     const articles = await response.json();
 
     articles.forEach(article => {
