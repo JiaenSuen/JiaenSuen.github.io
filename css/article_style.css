@@ -9,44 +9,63 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
+    justify-items: center;
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
 
  
 header {
-    padding-top: 40px;
-    text-align: center;
+    max-width: 775px;
+    min-width: 775px;
+    padding-top: 20px;
+    text-align: left;
     margin-bottom: 20px;
+ 
+    background-color: rgb(255, 255, 255);
 }
 
 header h1 {
+    padding-top: 15px;
     color: #333;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+header h3 {
+    color: #837676;
+    font-size: 1em;
 }
 
- 
-.article-image {
-    max-width: 600px;
-    min-width: 600px;
-    max-height: 350px;
-    min-height: 350px;
-    height: auto;
+.article-cover {
+    max-width: 775px;
+    min-width: 775px;
+    max-height: 300px;
+    min-height: 300px;
+    align-items: center;
+    margin: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+    max-width: 700px;
+    min-width: 600px;
+    height: auto;
+ 
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 article {
@@ -54,7 +73,7 @@ article {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
 
 article h2 {
@@ -65,14 +84,14 @@ article h2 {
 
 article h3 {
     color: #555;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 0.5em;
 }
 
 article p {
     color: #666;
     font-size: 1.2em;
-    line-height: 1.8;
+    line-height: 1.2;
     margin-bottom: 1em;
 }
 
@@ -92,5 +111,5 @@ footer {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
-    color: #666;
+    color: #ffffff;
 }
