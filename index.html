@@ -1,32 +1,157 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人文章 Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jiaen Suen - CS & ML Student</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>我的 Blog</h1>
-    </header>
-    <main>
-        <div class="content-wrapper">
-            <section class="browse_articles">
-                <section id="articles">
-                    <h2>最新文章</h2>
-                    <div id="article-list"></div>
-                </section>
-                
-            </section>
-            <section class="info">
-                <img src="data/cute-tiny-fox.jpg">
-            </section>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero   -->
+  <header id="hero">
+    <div class="container hero-content">
+      <h1>Hi, I'm Jiaen Suen</h1>
+      <h2>Undergraduate in Computer Science</h2>
+      <p class="lead">Interested in Machine Learning, Deep Learning, Computer Vision, and Large Language Models</p>
+      
+      <div class="hero-buttons">
+        <a href="data/cv.pdf" class="btn primary" target="_blank">Download CV</a>
+        <a href="https://github.com/yourusername" class="btn github" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a final-year undergraduate student passionate about building intelligent systems. Currently exploring topics in:</p>
+          <ul>
+            <li>Multimodal Large Language Models</li>
+            <li>3D Computer Vision & Neural Rendering</li>
+            <li>Efficient Training & Inference of Foundation Models</li>
+            <li>Self-supervised / Contrastive Learning</li>
+          </ul>
+          <p>I enjoy turning research ideas into working prototypes and writing clean, well-documented code.</p>
         </div>
-    </main>
-    <footer>
-        <p> </p>
-    </footer>
-    <script src="js/listing_article.js"></script>
+        <!--   -->
+        <div class="about-photo">
+          <img src="https://via.placeholder.com/280x280/2d3748/ffffff?text=Your+Photo" alt="Your Name">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section bg-light">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2021 – 2025 (expected)</div>
+          <div class="timeline-content">
+            <h3>B.S. in Computer Science</h3>
+            <p>National Taiwan University / Your University</p>
+            <p>GPA: X.XX / 4.3 (if good, show it)</p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects   -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-img-placeholder"></div>
+          <h3>Project Title 1</h3>
+          <p class="tech">PyTorch • Transformers • LoRA</p>
+          <p>Short description in 1-2 sentences. What problem, what you did, key result.</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Paper</a> • 
+            <a href="#" target="_blank">Code</a> • 
+            <a href="#" target="_blank">Demo</a>
+          </div>
+        </div>
+
+        <!-- Cards -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section bg-light">
+    <div class="container">
+      <h2>Publications & Preprints</h2>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-title">Title of First Paper (if any)</span><br>
+          <span class="authors">Your Name, Co-author, Advisor</span><br>
+          <span class="venue">arXiv / Conference, 202X</span>
+          <div class="pub-links">
+            <a href="#">Paper</a> • <a href="#">Code</a>
+          </div>
+        </li>
+        <!--  -->
+      </ul>
+      <p class="coming-soon" style="display:none;">(More coming soon...)</p>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto 2rem;">
+        I'm always open to research discussions, internships, or collaboration opportunities in ML/CV/NLP.
+      </p>
+      
+      <div class="social-links">
+        <a href="mailto:john20050826@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
