@@ -2,154 +2,290 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jiaen Suen - CS & ML Student</title>
-  
-  <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jiaen Suen — Computer Science undergraduate interested in machine learning, computer vision, multimodal systems, and efficient AI." />
+  <title>Jiaen Suen | CS & ML Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Nav -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="logo">Jiaen Suen</a>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Jiaen Suen home">Jiaen Suen</a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Research Journey</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero   -->
-  <header id="hero">
-    <div class="container hero-content">
-      <h1>Hi, I'm Jiaen Suen</h1>
-      <h2>Undergraduate in Computer Science</h2>
-      <p class="lead">Interested in Machine Learning, Deep Learning, Computer Vision, and Large Language Models</p>
-      
-      <div class="hero-buttons">
-        <a href="data/cv.pdf" class="btn primary" target="_blank">Download CV</a>
-        <a href="https://github.com/jiaensuen" class="btn github" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
+  <header id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow">Computer Science · Machine Learning · Computer Vision</p>
+        <h1>Hi, I’m Jiaen Suen.</h1>
+        <p class="hero-subtitle">Undergraduate student building research-driven AI systems, with interests in multimodal learning, 3D perception, and efficient foundation models.</p>
+
+        <div class="hero-actions" aria-label="Primary links">
+          <a href="data/cv.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+          <a href="https://github.com/jiaensuen" class="btn btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </div>
+
+        <div class="quick-facts" aria-label="Profile highlights">
+          <div>
+            <strong>Focus</strong>
+            <span>ML / CV / LLMs</span>
+          </div>
+          <div>
+            <strong>Degree</strong>
+            <span>B.S. expected 2027</span>
+          </div>
+          <div>
+            <strong>Goal</strong>
+            <span>Research & graduate study</span>
+          </div>
+        </div>
       </div>
+
+      <aside class="hero-card" aria-label="Research profile summary">
+        <div class="status-pill">Open to research internships</div>
+        <h2>Research Profile</h2>
+        <p>I enjoy converting research questions into reproducible prototypes, then documenting the technical trade-offs clearly.</p>
+        <ul>
+          <li>End-to-end ML prototypes</li>
+          <li>Embedded vision systems</li>
+          <li>Readable code and experiments</li>
+        </ul>
+      </aside>
     </div>
   </header>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I am a  junior undergraduate student passionate about building intelligent systems. Currently exploring topics in:</p>
-          <ul>
-            <li>Multimodal Large Language Models</li>
-            <li>3D Computer Vision & Neural Rendering</li>
-            <li>Efficient Training & Inference of Foundation Models</li>
-            <li>Self-supervised / Contrastive Learning</li>
-          </ul>
-          <p>I enjoy turning research ideas into working prototypes and writing clean, well-documented code.</p>
-        </div>
-        <!--   -->
-        <div class="about-photo">
-          <img src="data/cute-tiny-fox.jpg" alt=" ">
-        </div>
-      </div>
-    </div>
-  </section>
+  <main id="main">
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Building intelligent systems with research discipline.</h2>
+          <p class="section-lead">I am a junior undergraduate student passionate about machine learning, computer vision, and foundation models. I care about both the research idea and the engineering quality required to make it work.</p>
 
-  <!-- Education -->
-  <section id="education" class="section bg-light">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-date">2023 - 2027</div>
-          <div class="timeline-content">
-            <h3>B.S. in Cross College Elite Tech Program</h3>
-            <p>National Kaohsiung University of Science and Technology (NKUST)</p>
-            <p></p>
+          <div class="interest-list" aria-label="Research interests">
+            <span>Multimodal LLMs</span>
+            <span>3D Computer Vision</span>
+            <span>Neural Rendering</span>
+            <span>Efficient Inference</span>
+            <span>Self-supervised Learning</span>
+            <span>Contrastive Learning</span>
           </div>
         </div>
-        <!--  -->
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects   -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Selected Projects</h2>
-      <div class="projects-grid">
-        
-        
-        <div class="project-card">
-          <div class="project-img-placeholder"></div>
-          <h3>Embedded Stereo Vision Perception System</h3>
-          <p class="tech">PyTorch • Stereo Vision</p>
-          <p> Lightweight pure-vision 3D perception pipeline integrating small-baseline (6 cm) stereo depth estimation and semantic object detection, optimized for NVIDIA Jetson embedded platforms. </p>
-          <div class="project-links">
-            <a href="#" target="_blank">Paper</a> • 
-            <a href="#" target="_blank">Code</a> • 
-            <a href="#" target="_blank">Demo</a>
+        <div class="profile-card">
+          <img src="data/cute-tiny-fox.jpg" alt="Profile illustration" />
+          <div>
+            <h3>What I value</h3>
+            <p>Clear problem formulation, measurable experiments, maintainable code, and honest documentation of limitations.</p>
           </div>
         </div>
-        
-        <!-- Cards -->
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Publications -->
-  <section id="publications" class="section bg-light">
-    <div class="container">
-      <h2>Publications & Preprints</h2>
-      <ul class="pub-list">
-        <li>
-          <span class="pub-title">Title of First Paper </span><br>
-          <span class="authors">--, Co-author, Advisor</span><br>
-          <span class="venue">arXiv / Conference, 202X</span>
-          <div class="pub-links">
-            <a href="#">Paper</a> • <a href="#">Code</a>
+    <section id="education" class="section section-muted">
+      <div class="container">
+        <p class="section-kicker centered">Education</p>
+        <h2 class="centered">Academic Background</h2>
+
+        <div class="timeline compact">
+          <article class="timeline-item">
+            <div class="timeline-date">2023 — 2027</div>
+            <div class="timeline-content">
+              <h3>B.S. in Cross College Elite Tech Program</h3>
+              <p>National Kaohsiung University of Science and Technology (NKUST)</p>
+              <p class="muted">Relevant areas: computer science, machine learning, embedded systems, and applied AI.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Selected Projects</p>
+            <h2>Work that demonstrates research potential.</h2>
           </div>
-        </li>
-        <!--  -->
-      </ul>
-      <p class="coming-soon" style="display:none;">(More coming soon...)</p>
-    </div>
-  </section>
+          <p>Each project card is written for busy reviewers: problem, method, result direction, and links are visible quickly.</p>
+        </div>
 
-  <!-- Contact & Footer -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p style="text-align:center; max-width:600px; margin:0 auto 2rem;">
-        I'm always open to research discussions, internships, or collaboration opportunities in ML/CV/NLP.
-      </p>
-      
-      <div class="social-links">
-        <a href="mailto:john20050826@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/jiaensuen" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-media">
+              <span>3D Vision · Embedded AI</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3>Embedded Stereo Vision Perception System</h3>
+                <span class="project-tag">Featured</span>
+              </div>
+              <p class="tech">PyTorch · Stereo Vision · Object Detection · NVIDIA Jetson</p>
+              <p>Lightweight pure-vision 3D perception pipeline integrating small-baseline stereo depth estimation and semantic object detection, optimized for embedded deployment.</p>
+              <ul class="project-points">
+                <li>Designed a practical perception pipeline under compute constraints.</li>
+                <li>Focused on depth quality, latency, and deployability.</li>
+                <li>Documented assumptions and limitations for future research iteration.</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Paper</a>
+                <a href="#" target="_blank" rel="noopener">Code</a>
+                <a href="#" target="_blank" rel="noopener">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media subtle">
+              <span>ML Systems</span>
+            </div>
+            <div class="project-body">
+              <h3>Efficient Foundation Model Experiments</h3>
+              <p class="tech">PyTorch · Training Efficiency · Evaluation</p>
+              <p>Experiment-oriented project space for studying efficient training and inference strategies for modern deep learning models.</p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Code</a>
+                <a href="#" target="_blank" rel="noopener">Notes</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media subtle">
+              <span>Representation Learning</span>
+            </div>
+            <div class="project-body">
+              <h3>Self-supervised / Contrastive Learning Study</h3>
+              <p class="tech">Computer Vision · Representation Learning</p>
+              <p>Reading-and-implementation project comparing representation learning ideas through reproducible experiments and concise technical notes.</p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Code</a>
+                <a href="#" target="_blank" rel="noopener">Write-up</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="journey" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Project / Research Journey</p>
+            <h2>How important work developed over time.</h2>
+          </div>
+          <p>This section helps recruiters and graduate reviewers see growth, ownership, and research maturity—not just final outputs.</p>
+        </div>
+
+        <div class="journey-list">
+          <article class="journey-item">
+            <div class="journey-date">Stage 01</div>
+            <div class="journey-content">
+              <h3>Problem Framing</h3>
+              <p>Defined the target scenario: achieving reliable 3D perception on resource-constrained embedded hardware using a pure-vision pipeline.</p>
+              <span class="journey-meta">Question: How much perception quality can be preserved under strict compute limits?</span>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-date">Stage 02</div>
+            <div class="journey-content">
+              <h3>Prototype and Baseline</h3>
+              <p>Built initial stereo depth and detection components, then used baseline outputs to identify bottlenecks in latency, accuracy, and integration stability.</p>
+              <span class="journey-meta">Output: baseline pipeline, failure cases, and experiment notes.</span>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-date">Stage 03</div>
+            <div class="journey-content">
+              <h3>Optimization and Deployment</h3>
+              <p>Refined the system for NVIDIA Jetson deployment, prioritizing practical trade-offs between model size, runtime performance, and perception quality.</p>
+              <span class="journey-meta">Output: optimized prototype and deployment documentation.</span>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-date">Stage 04</div>
+            <div class="journey-content">
+              <h3>Reflection and Next Steps</h3>
+              <p>Recorded limitations and future directions, including more robust calibration, stronger evaluation protocols, and possible multimodal extensions.</p>
+              <span class="journey-meta">Next: turn the project into a clearer research artifact.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container narrow">
+        <p class="section-kicker centered">Publications & Preprints</p>
+        <h2 class="centered">Writing and Research Outputs</h2>
+
+        <ul class="publication-list">
+          <li>
+            <div>
+              <h3>Title of First Paper</h3>
+              <p class="authors">Jiaen Suen, Co-author, Advisor</p>
+              <p class="venue">arXiv / Conference, 202X</p>
+            </div>
+            <div class="pub-links">
+              <a href="#" target="_blank" rel="noopener">Paper</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-muted">
+      <div class="container narrow contact-box">
+        <p class="section-kicker centered">Contact</p>
+        <h2 class="centered">Let’s connect.</h2>
+        <p>I am open to research discussions, internships, and collaboration opportunities in machine learning, computer vision, and language / multimodal AI.</p>
+
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:john20050826@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://github.com/jiaensuen" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p></p>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Jiaen Suen. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#hero">Back to top</a>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,9 +1,41 @@
- 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section[id], header[id]');
+const year = document.querySelector('#year');
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+navItems.forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks?.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
   });
 });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+      navItems.forEach((link) => link.classList.remove('active'));
+      activeLink?.classList.add('active');
+    });
+  },
+  {
+    rootMargin: '-35% 0px -55% 0px',
+    threshold: 0
+  }
+);
+
+sections.forEach((section) => observer.observe(section));
