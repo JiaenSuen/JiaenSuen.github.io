@@ -1,22 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jiaen Suen — academic portfolio in machine learning, computer vision, and robotics." />
-  <title>Jiaen Suen | Academic Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiaen Suen — researcher interested in computer vision, robotic perception, robotics AI, robot learning, and efficient embodied intelligence.">
+  <meta name="theme-color" content="#f7f3eb">
+  <title>Jiaen Suen | Robotics AI & Perception Research</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/research-map.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="site-name" href="#personal">Jiaen Suen</a>
+      <a class="site-name" href="#profile" aria-label="Jiaen Suen, home">Jiaen Suen</a>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -24,61 +26,218 @@
 
       <nav aria-label="Primary navigation">
         <ul class="nav-links">
-          <li><a href="#personal">Profile</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a href="#publications">Publications</a></li>
+          <li><a href="#education">Education</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section id="personal" class="section hero-section">
+    <section id="profile" class="hero-section section-anchor">
       <div class="container hero-grid">
-        <div class="portrait-placeholder" aria-label="Portrait image placeholder">
-          <span>Portrait</span>
-          <small>Replace with your photo</small>
-        </div>
+        <div class="hero-main">
 
-        <div class="hero-content">
-          <p class="kicker">Computer Science Undergraduate</p>
           <h1>Jiaen Suen</h1>
-          <p class="role">Machine Learning · Computer Vision · Robotics</p>
-          <p class="intro">
-            I am an undergraduate student interested in efficient visual intelligence, stereo perception,
-            embedded AI systems, and research-oriented machine learning. My work focuses on building practical,
-            reproducible systems under limited computing resources.
+          <div class="academic-status" aria-label="Current academic status">
+            <p>B.S. Student in Cross College Elite Tech Program</p>
+            <span>National Kaohsiung University of Science and Technology · Expected 2027</span>
+          </div>
+          <p class="hero-role">Computer Vision · Robotic Perception · Robotics AI &amp; Learning</p>
+          <p class="hero-intro">
+            I study efficient intelligence for compact robotic systems, with my strongest current focus in computer vision
+            and 3D perception. My work spans stereo geometry, embedded deep learning, and robotic perception, while I am
+            expanding toward reinforcement learning, robot learning, and integrated perception–decision–control systems.
+            Longer term, I am interested in compact physical and latent world models for embodied AI.
           </p>
 
-          <div class="text-links" aria-label="Profile links">
-            <a href="data/cv.pdf" target="_blank" rel="noopener">CV</a>
-            <a href="https://github.com/john20050826" target="_blank" rel="noopener">GitHub</a>
+ 
+
+          <div class="hero-links" aria-label="Profile links">
+            <a href="https://github.com/john20050826" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
             <a href="mailto:john20050826@gmail.com">Email</a>
           </div>
+        </div>
 
-          <dl class="profile-details">
-            <div>
-              <dt>Current</dt>
-              <dd>B.S. student, expected 2027</dd>
+        <figure class="hero-portrait">
+          <img src="data/picture.jpg" alt="Portrait of Jiaen Suen">
+        </figure>
+      </div>
+    </section>
+
+    <section id="research" class="section research-section section-anchor">
+      <div class="container">
+        <div class="section-intro research-intro">
+          <div>
+            <p class="section-index">01 · Research</p>
+            <h2>Research trajectory</h2>
+          </div>
+          <p>
+            From robust visual perception to efficient embodied intelligence for compact robots.
+          </p>
+        </div>
+
+        <section class="research-map-module" data-research-map-module data-map-src="data/research-map.json" aria-label="Interactive research roadmap">
+          <div class="map-shell">
+            <div class="map-toolbar">
+              <div class="map-legend" aria-label="Research status legend"></div>
+              <p class="map-instruction"><span></span>Select a node to read its research abstract</p>
+              <div class="map-actions" aria-label="Map controls">
+                <button type="button" class="icon-button" data-rm-action="zoom-out" aria-label="Zoom out">−</button>
+                <span class="zoom-readout" data-rm-role="zoom-readout">100%</span>
+                <button type="button" class="icon-button" data-rm-action="zoom-in" aria-label="Zoom in">+</button>
+                <button type="button" class="text-button" data-rm-action="reset">Reset</button>
+                <button type="button" class="text-button fullscreen-button" data-rm-action="fullscreen" aria-label="Expand map to full screen" aria-pressed="false">
+                  <svg viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10"></path>
+                  </svg>
+                  <span data-rm-role="fullscreen-label">Full map</span>
+                </button>
+              </div>
             </div>
-            <div>
-              <dt>Research interests</dt>
-              <dd>Efficient AI, 3D vision, robotic perception, multimodal learning</dd>
+
+            <div class="map-layout">
+              <div class="map-stage" data-rm-role="stage">
+                <div class="map-loading" data-rm-role="loading" role="status"><span></span>Composing research landscape…</div>
+                <svg class="research-map" data-rm-role="svg" viewBox="0 0 1600 880" role="img" aria-labelledby="rm-map-svg-title rm-map-svg-desc">
+                  <title id="rm-map-svg-title">Interactive research roadmap</title>
+                  <desc id="rm-map-svg-desc">A research graph from published stereo-depth work through current distillation and fusion research to future traversability and temporal perception.</desc>
+                  <defs>
+                    <filter id="rm-node-shadow" x="-30%" y="-30%" width="160%" height="170%">
+                      <feDropShadow dx="0" dy="11" stdDeviation="14" flood-color="#5d5962" flood-opacity=".09"></feDropShadow>
+                    </filter>
+                    <filter id="rm-core-glow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#dda9bd" flood-opacity=".18"></feDropShadow>
+                    </filter>
+                    <linearGradient id="rm-core-gradient" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#fdf5f8"></stop>
+                      <stop offset=".34" stop-color="#fcedf3"></stop>
+                      <stop offset=".68" stop-color="#fae8f0"></stop>
+                      <stop offset="1" stop-color="#f7e3ec"></stop>
+                    </linearGradient>
+                    <pattern id="rm-dot-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                      <circle cx="2" cy="2" r="1" fill="#716f77" opacity=".075"></circle>
+                    </pattern>
+                    <marker id="rm-arrow-main" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c8a93"></path>
+                    </marker>
+                  </defs>
+                  <g data-rm-role="viewport">
+                    <rect class="map-grid" x="0" y="0" width="1600" height="880" fill="url(#rm-dot-grid)"></rect>
+                    <g data-rm-role="phase-layer"></g>
+                    <g data-rm-role="edge-layer"></g>
+                    <g data-rm-role="node-layer"></g>
+                  </g>
+                </svg>
+                <div class="map-hint" aria-hidden="true"><span class="mouse-icon"></span>Drag to pan · Scroll to zoom</div>
+              </div>
+
+              <aside class="detail-panel" data-rm-role="detail-panel" aria-live="polite" aria-labelledby="rm-detail-title">
+                <div class="detail-topline">
+                  <span data-rm-role="detail-index">Research brief</span>
+                  <button type="button" data-rm-action="close-detail" aria-label="Close research brief">×</button>
+                </div>
+                <div class="detail-body">
+                  <div class="detail-status" data-rm-role="detail-status">Research agenda</div>
+                  <h3 id="rm-detail-title" data-rm-role="detail-title">A connected line of inquiry</h3>
+                  <div class="detail-domains" data-rm-role="detail-domains"></div>
+                  <p class="detail-summary" data-rm-role="detail-summary">Select a node to read a concise introduction to its role within the research roadmap.</p>
+                </div>
+              </aside>
             </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Taiwan</dd>
-            </div>
-          </dl>
+          </div>
+        </section>
+
+        <div class="research-notes">
+          <div class="research-note">
+            <span>Current thesis nucleus</span>
+            <p>Resource-Constrained Embodied Perception and Intelligence for Small Robots</p>
+          </div>
+          <div class="research-note">
+            <span>Research horizon</span>
+            <p>Embedded physical &amp; latent models for robotics</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="education" class="section section-muted">
+    <section class="section focus-section" aria-labelledby="focus-heading">
       <div class="container content-grid">
         <div class="section-heading">
-          <p class="section-index">01</p>
+          <p class="section-index">02 · Focus</p>
+          <h2 id="focus-heading">Current directions</h2>
+          <p class="section-note">Selected technical questions within the broader research agenda.</p>
+        </div>
+
+        <div class="focus-list">
+          <article class="focus-item">
+            <p class="focus-number">A</p>
+            <div>
+              <h3>Embedded Stereo &amp; Visual Perception</h3>
+              <p>Developing robust 3D visual perception for compact robotic platforms, with emphasis on small-baseline stereo, domain shift, efficient deep models, and edge deployment.</p>
+              <div class="topic-tags"><span>Stereo vision</span><span>3D perception</span><span>Embedded AI</span></div>
+            </div>
+          </article>
+
+          <article class="focus-item">
+            <p class="focus-number">B</p>
+            <div>
+              <h3>Learning-Enabled Robotic Systems</h3>
+              <p>Exploring how deep learning, reinforcement learning, perception, and control can be integrated into compact robotic systems that learn to make decisions and act from sensory feedback.</p>
+              <div class="topic-tags"><span>Reinforcement learning</span><span>Robot learning</span><span>System integration</span></div>
+            </div>
+          </article>
+
+          <article class="focus-item">
+            <p class="focus-number">C</p>
+            <div>
+              <h3>Compact Physical &amp; Latent World Models</h3>
+              <p>Investigating lightweight physical and latent-state models that learn compact dynamics from small robotic environments and support prediction, temporal reasoning, and action-conditioned interaction.</p>
+              <div class="topic-tags"><span>Physical AI</span><span>World models</span><span>Latent dynamics</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-muted section-anchor">
+      <div class="container content-grid">
+        <div class="section-heading">
+          <p class="section-index">03 · Publications</p>
+          <h2>Selected publications</h2>
+          <p class="section-note">Work on stereo depth, domain shift, and deployment-oriented robotic perception.</p>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+            <div class="publication-content">
+              <div class="publication-venue">ICCE–TW · Conference paper</div>
+              <h3>Lightweight Stereo Depth Evaluation under Small-Baseline Domain Shift for Indoor Robotics</h3>
+              <p>Evaluates lightweight stereo depth estimation under compact-camera domain shifts and frames deployment robustness as a practical problem for indoor robotic perception.</p>
+              <div class="publication-tags"><span>Stereo depth</span><span>Domain shift</span><span>Indoor robotics</span></div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+            <div class="publication-content">
+              <div class="publication-venue">ARIS / NCAR · Conference paper</div>
+              <h3>Analyzing the Domain Shift Problem in Stereo Depth Estimation Models for Embedded Systems</h3>
+              <p>Compares classical and deep stereo methods under embedded constraints, examining how camera-domain shift changes accuracy, stability, and practical model selection.</p>
+              <div class="publication-tags"><span>Embedded systems</span><span>Model analysis</span><span>Small baseline</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-anchor">
+      <div class="container content-grid">
+        <div class="section-heading">
+          <p class="section-index">04 · Education</p>
           <h2>Education</h2>
         </div>
 
@@ -87,96 +246,23 @@
           <div>
             <h3>B.S. in Cross College Elite Tech Program</h3>
             <p>National Kaohsiung University of Science and Technology</p>
-            <p class="secondary">
-              Coursework and research experience in computer science, machine learning, embedded systems,
-              computer vision, and applied artificial intelligence.
-            </p>
+            <p class="secondary">Research and coursework spanning computer science, machine learning, embedded systems, computer vision, and applied artificial intelligence.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container content-grid">
-        <div class="section-heading">
-          <p class="section-index">02</p>
-          <h2>Projects</h2>
-          <p class="section-note">Selected research and engineering work.</p>
-        </div>
 
-        <div class="item-list">
-          <article class="work-item template-item">
-            <div class="media-placeholder landscape" aria-label="Project image placeholder">
-              <span>Project image</span>
-              <small>Diagram, system photo, result, or demo frame</small>
-            </div>
-
-            <div class="work-content">
-              <div class="item-meta">
-                <span>Project category</span>
-                <time>20XX</time>
-              </div>
-              <h3>Project Title</h3>
-              <p class="technical-line">Methods / Tools / Platform</p>
-              <p>
-                Write a concise project summary here. State the problem, your technical approach, and the main
-                result or contribution in approximately two to four sentences.
-              </p>
-              <div class="text-links">
-                <a href="#">Code</a>
-                <a href="#">Paper</a>
-                <a href="#">Demo</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section section-muted">
-      <div class="container content-grid">
-        <div class="section-heading">
-          <p class="section-index">03</p>
-          <h2>Publications</h2>
-          <p class="section-note">Conference papers, journal articles, and preprints.</p>
-        </div>
-
-        <div class="item-list">
-          <article class="publication-item template-item">
-            <div class="media-placeholder paper" aria-label="Paper thumbnail placeholder">
-              <span>Paper figure</span>
-              <small>First-page preview or method figure</small>
-            </div>
-
-            <div class="work-content">
-              <div class="item-meta">
-                <span>Conference / Journal</span>
-                <time>20XX</time>
-              </div>
-              <h3>Paper Title</h3>
-              <p class="authors">Jiaen Suen, Co-author, Advisor</p>
-              <p>
-                Add a brief one- or two-sentence description of the paper's problem, method, and contribution.
-              </p>
-              <div class="text-links">
-                <a href="#">Paper</a>
-                <a href="#">Code</a>
-                <a href="#">Project page</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Jiaen Suen</p>
-      <p>Academic portfolio</p>
+      <p>Computer Vision · Robotics AI · Embodied Intelligence</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/research-map.js" defer></script>
 </body>
 </html>
