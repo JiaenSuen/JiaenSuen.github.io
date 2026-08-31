@@ -169,7 +169,7 @@ button { font: inherit; }
   gap: 58px;
   align-items: start;
 }
-.section-heading h2, .section-intro h2 {
+.section-heading h2, .section-intro h2, .contact-section h2 {
   margin-top: 5px;
   font-family: "Source Serif 4", Georgia, serif;
   font-size: clamp(1.75rem, 3vw, 2.35rem);
@@ -249,6 +249,9 @@ button { font: inherit; }
 .education-entry p { color: var(--secondary); }
 .education-entry .secondary { max-width: 690px; margin-top: 8px; font-size: .85rem; }
 
+.contact-section { padding: 92px 0 96px; background: #eae2d6; border-bottom: 1px solid var(--line); }
+.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+.contact-copy > p { max-width: 620px; color: var(--secondary); font-family: "Source Serif 4", Georgia, serif; font-size: 1.08rem; line-height: 1.6; }
 
 .footer { padding: 25px 0 30px; background: var(--surface); color: var(--faint); font-size: .7rem; }
 .footer-row { display: flex; justify-content: space-between; gap: 20px; }
@@ -258,6 +261,7 @@ button { font: inherit; }
   .research-position { max-width: 620px; }
   .research-intro { grid-template-columns: 1fr; gap: 20px; }
   .content-grid { grid-template-columns: 155px minmax(0, 1fr); gap: 38px; }
+  .contact-grid { gap: 42px; }
 }
 
 @media (max-width: 760px) {
@@ -282,8 +286,9 @@ button { font: inherit; }
   .hero-section { padding: 78px 0 72px; }
   .hero-main h1 { font-size: clamp(2.8rem, 15vw, 4rem); }
   .section { padding: 64px 0; }
-  .content-grid { grid-template-columns: 1fr; gap: 30px; }
+  .content-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
   .research-note { grid-template-columns: 1fr; gap: 4px; }
+  .contact-section { padding: 68px 0 72px; }
 }
 
 @media (max-width: 520px) {
@@ -299,68 +304,4 @@ button { font: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-}
-
-/* 2026-08 profile and research refinements */
-.academic-status {
-  margin: 13px 0 16px;
-}
-.academic-status p {
-  color: #4f504c;
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: .98rem;
-  font-weight: 600;
-  line-height: 1.35;
-}
-.academic-status span {
-  display: block;
-  margin-top: 3px;
-  color: var(--faint);
-  font-size: .72rem;
-  line-height: 1.45;
-}
-.hero-portrait {
-  width: min(100%, 300px);
-  justify-self: end;
-  margin: 0;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  overflow: hidden;
-}
-.hero-portrait img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
-.research-notes {
-  width: min(100%, 1080px);
-  margin: 18px auto 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  border-top: 1px solid var(--line);
-}
-.research-notes .research-note {
-  width: auto;
-  margin: 0;
-  grid-template-columns: 1fr;
-  gap: 5px;
-  padding-top: 16px;
-  border-top: 0;
-}
-@media (max-width: 900px) {
-  .hero-portrait { justify-self: start; width: min(240px, 62vw); }
-}
-@media (max-width: 760px) {
-  .research-notes { grid-template-columns: 1fr; gap: 0; }
-  .research-notes .research-note + .research-note { border-top: 1px solid var(--line-soft); }
-}
-
-/* Keep the researcher name prominent without dominating the academic profile. */
-.hero-main h1 {
-  font-size: clamp(2.75rem, 5.6vw, 4.25rem);
-}
-@media (max-width: 760px) {
-  .hero-main h1 { font-size: clamp(2.45rem, 12vw, 3.45rem); }
 }
