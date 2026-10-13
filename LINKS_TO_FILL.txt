@@ -20,7 +20,7 @@ JOURNAL PAPERS
 
 CONFERENCE PAPERS
 - IEEE ICCE-TW 2026 — Lightweight Stereo Depth Evaluation under Small-Baseline Domain Shift for Indoor Robotics
-  - Paper
+  - Paper: https://ieeexplore.ieee.org/document/11652706
   - GitHub
 - ARIS 2026 — Analyzing the Domain Shift Problem in Stereo Depth Estimation Models for Embedded Systems
   - Paper
@@ -39,6 +39,6 @@ SELECTED PROJECTS
 - Robotic Reinforcement Learning Sandbox
   - Project
   - GitHub
-- PANCAKE — Discrete Metaheuristic Optimization
+- Structure-Aware Metaheuristic Search for Coupled Procurement–Routing Optimization
   - Project
   - GitHub
