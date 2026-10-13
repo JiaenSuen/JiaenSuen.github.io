@@ -1,0 +1,44 @@
+PAPER / GITHUB LINK PLACEHOLDERS
+
+All placeholder links are in index.html and currently use:
+  href="#" aria-disabled="true" class="action-link is-placeholder"
+
+When a real URL is available:
+  1. Replace href="#" with the URL.
+  2. Remove aria-disabled="true".
+  3. Remove "is-placeholder" from the class list.
+
+Entries currently waiting for links:
+
+JOURNAL PAPERS
+- Resource-Aware Knowledge Distillation for Robust Small-Baseline Stereo Depth Estimation
+  - Paper
+  - GitHub
+- Controlled Cross-Task Fusion of Stereo-Trained Representations for Lightweight Object Detection
+  - Paper
+  - GitHub
+
+CONFERENCE PAPERS
+- IEEE ICCE-TW 2026 — Lightweight Stereo Depth Evaluation under Small-Baseline Domain Shift for Indoor Robotics
+  - Paper
+  - GitHub
+- ARIS 2026 — Analyzing the Domain Shift Problem in Stereo Depth Estimation Models for Embedded Systems
+  - Paper
+  - GitHub
+- TANET 2025 — An Intelligent Housing Rental Analytics Platform Based on Ensemble Learning and Residual-Aware Stacking
+  - Paper
+  - GitHub
+- ACIIDS 2027 — Structure-Aware Discrete Metaheuristic Search for Coupled Procurement–Routing Optimization: Representation, Neighborhoods, and Mechanism Analysis
+  - Paper
+  - GitHub
+
+SELECTED PROJECTS
+- E pluribus — Multi-Task Ecological Research Assistant
+  - Project
+  - GitHub
+- Robotic Reinforcement Learning Sandbox
+  - Project
+  - GitHub
+- PANCAKE — Discrete Metaheuristic Optimization
+  - Project
+  - GitHub

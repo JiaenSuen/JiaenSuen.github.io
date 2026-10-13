@@ -3,16 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jiaen Suen — researcher interested in computer vision, robotic perception, robotics AI, robot learning, and efficient embodied intelligence.">
-  <meta name="theme-color" content="#f7f3eb">
-  <link rel="icon" type="image/png" href="data/icon.png">
-  <title>Jiaen Suen | Robotics AI & Perception Research</title>
+  <meta name="description" content="Jiaen Suen — undergraduate researcher in resource-constrained robotic perception, computer vision, Edge AI, and embodied intelligence.">
+  <meta name="theme-color" content="#fcfbf9">
+  <title>Jiaen Suen | Robotics & Computer Vision Research</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260831-2">
-  <link rel="stylesheet" href="css/research-map.css?v=20260831-2">
+  <link rel="stylesheet" href="css/style.css?v=20261014-2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -27,9 +25,9 @@
 
       <nav aria-label="Primary navigation">
         <ul class="nav-links">
-          <li><a href="#profile">Profile</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#publications">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
         </ul>
       </nav>
@@ -37,28 +35,26 @@
   </header>
 
   <main id="main">
-    <section id="profile" class="hero-section section-anchor">
+    <section id="profile" class="hero section-anchor">
       <div class="container hero-grid">
-        <div class="hero-main">
-
+        <div class="hero-copy">
+          <p class="eyebrow">Undergraduate Researcher · Computer Vision & Robotics</p>
           <h1>Jiaen Suen</h1>
-          <div class="academic-status" aria-label="Current academic status">
-            <p>B.S. Student in Cross College Elite Tech Program</p>
-            <span>National Kaohsiung University of Science and Technology · Expected 2027</span>
-          </div>
-          <p class="hero-role">Computer Vision · Robotic Perception · Robotics AI &amp; Learning</p>
-          <p class="hero-intro">
-            I study efficient intelligence for compact robotic systems, with my strongest current focus in computer vision
-            and 3D perception. My work spans stereo geometry, embedded deep learning, and robotic perception, while I am
-            expanding toward reinforcement learning, robot learning, and integrated perception–decision–control systems.
-            Longer term, I am interested in compact physical and latent world models for embodied AI.
+          <p class="hero-lead">
+            I study efficient visual perception and learning for resource-constrained robotic systems.
+            My current work focuses on stereo depth estimation under domain shift, edge deployment,
+            knowledge distillation, and cross-task representation reuse, with broader interests in robot
+            learning and embodied intelligence.
           </p>
 
- 
+          <div class="hero-meta" aria-label="Academic affiliation">
+            <p><strong>National Kaohsiung University of Science and Technology</strong></p>
+            <p>B.S. Student, Cross College Elite Tech Program · Minor in Mechanical Engineering</p>
+          </div>
 
-          <div class="hero-links" aria-label="Profile links">
-            <a href="https://github.com/JiaenSuen" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
-            <a href="mailto:john20050826@gmail.com">Email</a>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="text-link" href="https://github.com/JiaenSuen" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="mailto:john20050826@com.tw">Email <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
@@ -68,135 +64,44 @@
       </div>
     </section>
 
-    <section id="research" class="section research-section section-anchor">
-      <div class="container">
-        <div class="section-intro research-intro">
-          <div>
-            <p class="section-index">01 · Research</p>
-            <h2>Research trajectory</h2>
-          </div>
-          <p>
-            From robust visual perception to efficient embodied intelligence for compact robots.
-          </p>
-        </div>
-
-        <section class="research-map-module" data-research-map-module data-map-src="data/research-map.json" aria-label="Interactive research roadmap">
-          <div class="map-shell">
-            <div class="map-toolbar">
-              <div class="map-legend" aria-label="Research status legend"></div>
-              <p class="map-instruction"><span></span>Select a node to read its research abstract</p>
-              <div class="map-actions" aria-label="Map controls">
-                <button type="button" class="icon-button" data-rm-action="zoom-out" aria-label="Zoom out">−</button>
-                <span class="zoom-readout" data-rm-role="zoom-readout">100%</span>
-                <button type="button" class="icon-button" data-rm-action="zoom-in" aria-label="Zoom in">+</button>
-                <button type="button" class="text-button" data-rm-action="reset">Reset</button>
-                <button type="button" class="text-button fullscreen-button" data-rm-action="fullscreen" aria-label="Expand map to full screen" aria-pressed="false">
-                  <svg viewBox="0 0 16 16" aria-hidden="true">
-                    <path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10"></path>
-                  </svg>
-                  <span data-rm-role="fullscreen-label">Full map</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="map-layout">
-              <div class="map-stage" data-rm-role="stage">
-                <div class="map-loading" data-rm-role="loading" role="status"><span></span>Composing research landscape…</div>
-                <svg class="research-map" data-rm-role="svg" viewBox="0 0 1600 880" role="img" aria-labelledby="rm-map-svg-title rm-map-svg-desc">
-                  <title id="rm-map-svg-title">Interactive research roadmap</title>
-                  <desc id="rm-map-svg-desc">A research graph from published stereo-depth work through current distillation and fusion research to future traversability and temporal perception.</desc>
-                  <defs>
-                    <filter id="rm-node-shadow" x="-30%" y="-30%" width="160%" height="170%">
-                      <feDropShadow dx="0" dy="11" stdDeviation="14" flood-color="#5d5962" flood-opacity=".09"></feDropShadow>
-                    </filter>
-                    <filter id="rm-core-glow" x="-50%" y="-50%" width="200%" height="200%">
-                      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#dda9bd" flood-opacity=".18"></feDropShadow>
-                    </filter>
-                    <linearGradient id="rm-core-gradient" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0" stop-color="#fdf5f8"></stop>
-                      <stop offset=".34" stop-color="#fcedf3"></stop>
-                      <stop offset=".68" stop-color="#fae8f0"></stop>
-                      <stop offset="1" stop-color="#f7e3ec"></stop>
-                    </linearGradient>
-                    <pattern id="rm-dot-grid" width="32" height="32" patternUnits="userSpaceOnUse">
-                      <circle cx="2" cy="2" r="1" fill="#716f77" opacity=".075"></circle>
-                    </pattern>
-                    <marker id="rm-arrow-main" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c8a93"></path>
-                    </marker>
-                  </defs>
-                  <g data-rm-role="viewport">
-                    <rect class="map-grid" x="0" y="0" width="1600" height="880" fill="url(#rm-dot-grid)"></rect>
-                    <g data-rm-role="phase-layer"></g>
-                    <g data-rm-role="edge-layer"></g>
-                    <g data-rm-role="node-layer"></g>
-                  </g>
-                </svg>
-                <div class="map-hint" aria-hidden="true"><span class="mouse-icon"></span>Drag to pan · Scroll to zoom</div>
-              </div>
-
-              <aside class="detail-panel" data-rm-role="detail-panel" aria-live="polite" aria-labelledby="rm-detail-title">
-                <div class="detail-topline">
-                  <span data-rm-role="detail-index">Research brief</span>
-                  <button type="button" data-rm-action="close-detail" aria-label="Close research brief">×</button>
-                </div>
-                <div class="detail-body">
-                  <div class="detail-status" data-rm-role="detail-status">Research agenda</div>
-                  <h3 id="rm-detail-title" data-rm-role="detail-title">A connected line of inquiry</h3>
-                  <div class="detail-domains" data-rm-role="detail-domains"></div>
-                  <p class="detail-summary" data-rm-role="detail-summary">Select a node to read a concise introduction to its role within the research roadmap.</p>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <div class="research-notes">
-          <div class="research-note">
-            <span>Current thesis nucleus</span>
-            <p>Resource-Constrained Embodied Perception and Intelligence for Small Robots</p>
-          </div>
-          <div class="research-note">
-            <span>Research horizon</span>
-            <p>Embedded physical &amp; latent models for robotics</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section focus-section" aria-labelledby="focus-heading">
-      <div class="container content-grid">
+    <section id="research" class="section section-anchor">
+      <div class="container section-grid">
         <div class="section-heading">
-          <p class="section-index">02 · Focus</p>
-          <h2 id="focus-heading">Current directions</h2>
-          <p class="section-note">Selected technical questions within the broader research agenda.</p>
+          <p class="section-index">01 · Research</p>
+          <h2>Research interests</h2>
+          <p class="section-note">A compact view of the concepts connecting my current and planned work.</p>
         </div>
 
-        <div class="focus-list">
-          <article class="focus-item">
-            <p class="focus-number">A</p>
+        <div class="research-list">
+          <article class="research-item">
+            <span class="item-index">01</span>
             <div>
-              <h3>Embedded Stereo &amp; Visual Perception</h3>
-              <p>Developing robust 3D visual perception for compact robotic platforms, with emphasis on small-baseline stereo, domain shift, efficient deep models, and edge deployment.</p>
-              <div class="topic-tags"><span>Stereo vision</span><span>3D perception</span><span>Embedded AI</span></div>
+              <h3>Resource-Constrained Robotic Perception</h3>
+              <p>Reliable visual perception for small robotic platforms where sensing geometry, compute, memory, and latency are first-class research constraints.</p>
             </div>
           </article>
 
-          <article class="focus-item">
-            <p class="focus-number">B</p>
+          <article class="research-item">
+            <span class="item-index">02</span>
             <div>
-              <h3>Learning-Enabled Robotic Systems</h3>
-              <p>Exploring how deep learning, reinforcement learning, perception, and control can be integrated into compact robotic systems that learn to make decisions and act from sensory feedback.</p>
-              <div class="topic-tags"><span>Reinforcement learning</span><span>Robot learning</span><span>System integration</span></div>
+              <h3>Stereo Vision, Geometry & Domain Shift</h3>
+              <p>Small-baseline stereo depth estimation across camera, scene, and sensing-domain changes, with emphasis on accuracy–efficiency trade-offs in real embedded deployment.</p>
             </div>
           </article>
 
-          <article class="focus-item">
-            <p class="focus-number">C</p>
+          <article class="research-item">
+            <span class="item-index">03</span>
             <div>
-              <h3>Compact Physical &amp; Latent World Models</h3>
-              <p>Investigating lightweight physical and latent-state models that learn compact dynamics from small robotic environments and support prediction, temporal reasoning, and action-conditioned interaction.</p>
-              <div class="topic-tags"><span>Physical AI</span><span>World models</span><span>Latent dynamics</span></div>
+              <h3>Representation Transfer & Efficient Learning</h3>
+              <p>Knowledge distillation and controlled representation reuse across networks and tasks, separating genuine representation benefit from adapter capacity and optimization effects.</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <span class="item-index">04</span>
+            <div>
+              <h3>Robot Learning & Embodied Intelligence</h3>
+              <p>Learning representations, memory, and corrective control for compact agents acting under partial observability, with a longer-term interest in predictive latent dynamics.</p>
             </div>
           </article>
         </div>
@@ -204,66 +109,193 @@
     </section>
 
     <section id="publications" class="section section-muted section-anchor">
-      <div class="container content-grid">
+      <div class="container section-grid">
         <div class="section-heading">
-          <p class="section-index">03 · Publications</p>
-          <h2>Selected publications</h2>
-          <p class="section-note">Work on stereo depth, domain shift, and deployment-oriented robotic perception.</p>
+          <p class="section-index">02 · Publications</p>
+          <h2>Publications</h2>
+          <p class="section-note">Published work and manuscripts currently in development. Paper and repository links are scaffolded for later updates.</p>
         </div>
 
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="publication-year">2026</div>
-            <div class="publication-content">
-              <div class="publication-venue">ICCE–TW · Conference paper</div>
-              <h3>Lightweight Stereo Depth Evaluation under Small-Baseline Domain Shift for Indoor Robotics</h3>
-              <p>Evaluates lightweight stereo depth estimation under compact-camera domain shifts and frames deployment robustness as a practical problem for indoor robotic perception.</p>
-              <div class="publication-tags"><span>Stereo depth</span><span>Domain shift</span><span>Indoor robotics</span></div>
+        <div class="publication-groups">
+          <section class="publication-group" aria-labelledby="journal-heading">
+            <div class="group-heading">
+              <h3 id="journal-heading">Journal Papers</h3>
+              <span>Ongoing</span>
+            </div>
+
+            <article class="publication-entry">
+              <div class="publication-main">
+                <p class="publication-status">Manuscript in preparation</p>
+                <h4>Resource-Aware Knowledge Distillation for Robust Small-Baseline Stereo Depth Estimation</h4>
+                <p class="publication-description">Domain-oriented teacher–student learning for robust small-baseline stereo under domain shift and edge-compute constraints.</p>
+              </div>
+              <div class="publication-actions" aria-label="Publication links">
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">Paper <span>↗</span></a>
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-main">
+                <p class="publication-status">Manuscript in preparation</p>
+                <h4>Controlled Cross-Task Fusion of Stereo-Trained Representations for Lightweight Object Detection</h4>
+                <p class="publication-description">A controlled study of frozen stereo-trained representations, matched-capacity adapters, and representation compatibility in lightweight detection.</p>
+              </div>
+              <div class="publication-actions" aria-label="Publication links">
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">Paper <span>↗</span></a>
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+              </div>
+            </article>
+          </section>
+
+          <section class="publication-group" aria-labelledby="conference-heading">
+            <div class="group-heading">
+              <h3 id="conference-heading">Conference Papers</h3>
+              <span>2025–2027</span>
+            </div>
+
+            <article class="publication-entry">
+              <div class="publication-main">
+                <div class="publication-meta"><span>2026</span><span>IEEE ICCE-TW</span><span>Oral Presentation</span></div>
+                <h4>Lightweight Stereo Depth Evaluation under Small-Baseline Domain Shift for Indoor Robotics</h4>
+                <p class="publication-authors"><strong>J.-E. Suen</strong>, K.-W. Huang</p>
+              </div>
+              <div class="publication-actions" aria-label="Publication links">
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">Paper <span>↗</span></a>
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-main">
+                <div class="publication-meta"><span>2026</span><span>ARIS</span><span>Oral Presentation</span></div>
+                <h4>Analyzing the Domain Shift Problem in Stereo Depth Estimation Models for Embedded Systems</h4>
+                <p class="publication-authors"><strong>J.-E. Suen</strong>, K.-W. Huang</p>
+              </div>
+              <div class="publication-actions" aria-label="Publication links">
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">Paper <span>↗</span></a>
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-main">
+                <div class="publication-meta"><span>2025</span><span>TANET</span><span>Poster</span></div>
+                <h4>An Intelligent Housing Rental Analytics Platform Based on Ensemble Learning and Residual-Aware Stacking</h4>
+                <p class="publication-description">Residual-aware stacking and segmented regression for rental-price prediction, integrated into a Flask-based analytics and recommendation platform.</p>
+              </div>
+              <div class="publication-actions" aria-label="Publication links">
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">Paper <span>↗</span></a>
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="publication-entry">
+              <div class="publication-main">
+                <div class="publication-meta"><span>2027</span><span>ACIIDS</span><span>Ongoing / Under Review</span></div>
+                <h4>Structure-Aware Discrete Metaheuristic Search for Coupled Procurement–Routing Optimization: Representation, Neighborhoods, and Mechanism Analysis</h4>
+                <p class="publication-description">PANCAKE research on representation, neighborhood semantics, adaptive control, and metaheuristic mechanisms for coupled procurement–routing optimization.</p>
+              </div>
+              <div class="publication-actions" aria-label="Publication links">
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">Paper <span>↗</span></a>
+                <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-anchor">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-index">03 · Selected Projects</p>
+          <h2>Selected projects</h2>
+          <p class="section-note">Three projects selected for research relevance rather than breadth.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-entry">
+            <div class="project-topline">
+              <span>Computer Vision · Retrieval · Local LLM</span>
+              <span>Independent Project</span>
+            </div>
+            <h3>E pluribus — Multi-Task Ecological Research Assistant</h3>
+            <p>End-to-end ecological AI framework combining visual perception, hybrid retrieval, reranking, structured context engineering, and evidence synthesis. E-ConvNeXt reached 88.76% fine-grained classification accuracy while using substantially fewer parameters and GFLOPs than ResNet18.</p>
+            <div class="project-links">
+              <a href="#" aria-disabled="true" class="action-link is-placeholder">Project <span>↗</span></a>
+              <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
             </div>
           </article>
 
-          <article class="publication-item">
-            <div class="publication-year">2026</div>
-            <div class="publication-content">
-              <div class="publication-venue">ARIS / NCAR · Conference paper</div>
-              <h3>Analyzing the Domain Shift Problem in Stereo Depth Estimation Models for Embedded Systems</h3>
-              <p>Compares classical and deep stereo methods under embedded constraints, examining how camera-domain shift changes accuracy, stability, and practical model selection.</p>
-              <div class="publication-tags"><span>Embedded systems</span><span>Model analysis</span><span>Small baseline</span></div>
+          <article class="project-entry">
+            <div class="project-topline">
+              <span>Reinforcement Learning · Robotics</span>
+              <span>Independent Project</span>
+            </div>
+            <h3>Robotic Reinforcement Learning Sandbox</h3>
+            <p>A multi-task POMDP benchmark for studying recurrence, goal switching, topological aliasing, dynamic prediction, and safety. A lightweight 4-DOF manipulation prototype using DLS-IK and residual PPO achieved 99.0% pick-and-place success over 864 surrogate evaluation episodes.</p>
+            <div class="project-links">
+              <a href="#" aria-disabled="true" class="action-link is-placeholder">Project <span>↗</span></a>
+              <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-entry">
+            <div class="project-topline">
+              <span>Metaheuristics · Combinatorial Optimization</span>
+              <span>Research Study</span>
+            </div>
+            <h3>PANCAKE — Discrete Metaheuristic Optimization</h3>
+            <p>A systematic study of discrete search design across multiple metaheuristics and landscape conditions, including DWOA-AVNS and DFOX-APNS. The strongest configuration reduced median RPD by 83.2% and reached 1.72× GA-relative AUC efficiency.</p>
+            <div class="project-links">
+              <a href="#" aria-disabled="true" class="action-link is-placeholder">Project <span>↗</span></a>
+              <a href="#" aria-disabled="true" class="action-link is-placeholder">GitHub <span>↗</span></a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="education" class="section section-anchor">
-      <div class="container content-grid">
+    <section id="education" class="section section-muted section-anchor">
+      <div class="container section-grid">
         <div class="section-heading">
           <p class="section-index">04 · Education</p>
           <h2>Education</h2>
         </div>
 
-        <div class="education-entry">
-          <div class="entry-date">2023–2027</div>
-          <div>
-            <h3>B.S. in Cross College Elite Tech Program</h3>
-            <p>National Kaohsiung University of Science and Technology</p>
-            <p class="secondary">Research and coursework spanning computer science, machine learning, embedded systems, computer vision, and applied artificial intelligence.</p>
-          </div>
+        <div class="education-list">
+          <article class="education-entry">
+            <div class="education-date">2023–2027</div>
+            <div>
+              <h3>Bachelor of Cross College Elite Tech Program</h3>
+              <p>National Kaohsiung University of Science and Technology, Taiwan</p>
+              <p class="education-detail">Minor in Mechanical Engineering · Coursework in machine learning, deep learning, reinforcement learning, and algorithms.</p>
+            </div>
+          </article>
+
+          <article class="education-entry compact-entry">
+            <div class="education-date">2025–Present</div>
+            <div>
+              <h3>AI Lab, Department of Electrical Engineering</h3>
+              <p>Research advisor: Prof. Ko-Wei Huang</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-
-
   </main>
 
   <footer class="footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Jiaen Suen</p>
-      <p>Computer Vision · Robotics AI · Embodied Intelligence</p>
+      <div class="footer-links">
+        <a href="mailto:john20050826@com.tw">Email</a>
+        <a href="https://github.com/JiaenSuen" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </footer>
 
   <script src="js/script.js" defer></script>
-  <script src="js/research-map.js" defer></script>
 </body>
 </html>

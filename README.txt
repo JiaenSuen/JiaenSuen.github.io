@@ -1,15 +1,17 @@
 JIAEN SUEN — ACADEMIC RESEARCH WEBSITE
 
+Design direction
+  Minimal academic personal website with a bright warm-white palette.
+  The previous interactive research map has been removed in favor of a concise research-interest section.
+
 Structure
   index.html
   css/style.css
-  css/research-map.css
   js/script.js
-  js/research-map.js
-  data/research-map.json
+  data/picture.jpg
 
 Run locally
-  Because the research map loads JSON with fetch(), serve the directory through a static HTTP server instead of opening index.html with file://.
+  Open index.html directly in a browser, or serve the directory with any static HTTP server.
 
   Python example:
     python -m http.server 8000
@@ -17,12 +19,14 @@ Run locally
   Then open:
     http://localhost:8000
 
-Updating the research map
-  Edit data/research-map.json. Node positions, labels, status, abstracts, domains, and links are data-driven.
+Updating publication / project links
+  Paper and GitHub links currently use placeholder anchors with aria-disabled="true".
+  Replace href="#" with the real URL, remove aria-disabled="true", and remove the is-placeholder class.
 
-Updating the site
-  General layout/content: index.html
-  Main site visual system: css/style.css
-  Map-specific presentation: css/research-map.css
-  Navigation behavior: js/script.js
-  Map interaction/rendering: js/research-map.js
+Content layout
+  Profile / affiliation
+  Research interests
+  Journal papers (ongoing)
+  Conference papers
+  Selected projects
+  Education
