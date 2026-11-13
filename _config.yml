@@ -1,0 +1,5 @@
+# GitHub Pages builds /blog/ using its bundled Jekyll engine.
+# HTML pages without front matter (including the home page) stay unchanged.
+title: Jiaen Suen
+url: "https://jiaensuen.github.io"
+baseurl: ""

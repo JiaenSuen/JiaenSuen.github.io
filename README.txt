@@ -1,41 +1,50 @@
-JIAEN SUEN — ACADEMIC RESEARCH WEBSITE
+JIAEN SUEN — ACADEMIC WEBSITE WITH AUTOMATIC PDF BLOG
 
-This is a static HTML/CSS/JS website suitable for GitHub Pages.
+The site remains a lightweight HTML/CSS website. The Blog index uses
+GitHub Pages' built-in Jekyll support to detect PDF documents automatically.
 
-Site structure
-  index.html                    Main academic profile
-  blog/index.html               Blog page at /blog/
-  blog/posts/                   PDF articles (filenames become article titles)
-  blog/posts.json               Optional article descriptions, categories, page counts
-  blog/generate_index.py        Rebuild the blog index from PDF files
-  css/style.css                 Shared styles
-  js/script.js                  Mobile navigation / footer year
-  data/picture.jpg              Profile portrait
+UPLOAD A NEW ARTICLE (no scripts, JSON, or manual HTML editing)
 
-Preview locally
-  python -m http.server 8000
-  Open http://localhost:8000/ and http://localhost:8000/blog/
+  1. Open your GitHub Pages repository JiaenSuen/jiaensuen.github.io.
+  2. Navigate to blog/posts/.
+  3. Choose Add file > Upload files and drag in your PDF.
+  4. Choose Commit changes.
 
-Publish on GitHub Pages
-  Upload the *contents* of this ZIP to the root of JiaenSuen's
-  GitHub Pages repository, preserving the folder structure.
-  The blog will be available at https://jiaensuen.github.io/blog/
-  once GitHub Pages has deployed the new site.
+After GitHub Pages builds the site, the PDF will be listed automatically:
+  https://jiaensuen.github.io/blog/
 
-Add a new PDF blog article
-  1. Copy the PDF into blog/posts/. Example: My New Note.pdf
-  2. Optional: add an entry with key "My New Note" to blog/posts.json
-     to set a category, short description, and number of pages.
-  3. From the website root, run: python blog/generate_index.py
-  4. Upload/commit the new PDF and updated blog/index.html.
+The article title = PDF filename without .pdf.
+PDFs open in a new tab. Renaming or deleting a PDF will automatically
+update the list after the next build. Items are sorted by filename (Z to A).
+You can upload several PDFs together.
 
-The article title automatically comes from the PDF filename without
-its .pdf extension. On the blog page, PDF links open in a new tab.
-No LaTeX rendering pipeline or third-party dependencies are required.
+ONE-TIME GITHUB PAGES CONFIGURATION
 
-GitHub Pages is a static host and cannot automatically discover PDF
-files in a folder. Running generate_index.py refreshes the listing.
+  Repository > Settings > Pages > Build and deployment:
+  Source: Deploy from a branch
+  Branch: main (or the repository's current publishing branch)
+  Folder: /(root)
 
-Updating publication / project links
-  Unavailable links use href="#" with aria-disabled="true" and class
-  "is-placeholder". Replace the URL and remove these attributes.
+This Jekyll-based auto-index requires branch-based GitHub Pages publishing.
+Do not add a .nojekyll file; remove any existing one from the publishing
+root. If your repository already has a custom GitHub Actions deployment,
+that workflow would need to perform the Jekyll build instead.
+
+FILES
+  index.html                            Original academic profile
+  blog/index.html                       Automatically built /blog/ page
+  blog/posts/*.pdf                      Your notes (just upload files)
+  _config.yml                           Minimal Jekyll configuration
+  css/style.css                         Shared styles
+  js/script.js                          Mobile navigation and footer year
+  data/picture.jpg                      Portrait
+
+The legacy generate_index.py and posts.json have been removed. There is
+no Python installation or manual metadata maintenance required.
+
+LOCAL PREVIEW
+
+Open the deployed GitHub Pages site to see the generated article list.
+A plain `python -m http.server` or opening blog/index.html directly
+will not evaluate the Jekyll template. To render locally, install Jekyll
+and run: jekyll serve

@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /blog/
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -38,7 +42,6 @@
         <a class="blog-back" href="../">← Back to homepage</a>
         <p class="eyebrow">Writing / Research Notes</p>
         <h1>Blog &amp; Notes</h1>
-        <p class="blog-lead">Selected notes on computer vision, visual representation, and robotic perception. Written as concise, self-contained PDFs.</p>
       </div>
     </section>
 
@@ -47,22 +50,35 @@
         <div class="blog-sidebar">
           <p class="section-index">01 · Archive</p>
           <h2>Research notes</h2>
-          <p>Short technical writing, organized as an ongoing collection.</p>
         </div>
         <div>
           <div class="blog-posts">
-            <!-- BLOG_POSTS_START -->
-          <article class="blog-post">
-            <div>
-              <p class="blog-post-meta"><span>Stereo Vision</span><span>PDF · 2 pages</span></p>
-              <h2><a href="posts/Stereo%20Vision%20Foundations%2001.pdf" target="_blank" rel="noopener noreferrer">Stereo Vision Foundations 01</a></h2>
-              <p class="blog-post-summary">An introduction to binocular geometry, disparity-to-depth conversion, correspondence challenges, and classical Marr–Poggio and SAD matching.</p>
-            </div>
-            <div class="blog-post-actions">
-              <a class="action-link" href="posts/Stereo%20Vision%20Foundations%2001.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read Stereo Vision Foundations 01 as PDF">Read PDF <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-            <!-- BLOG_POSTS_END -->
+            {% comment %}
+            Automatically discover PDF notes from blog/posts/ during the
+            GitHub Pages Jekyll build. No manually maintained index required.
+            {% endcomment %}
+            {% assign ordered_files = site.static_files | sort: 'name' | reverse %}
+            {% assign pdf_count = 0 %}
+            {% for file in ordered_files %}
+              {% assign directory = file.path | slice: 0, 12 %}
+              {% assign extension = file.extname | downcase %}
+              {% if directory == '/blog/posts/' and extension == '.pdf' %}
+                {% assign pdf_count = pdf_count | plus: 1 %}
+                {% assign pdf_url = file.path | relative_url | uri_escape %}
+            <article class="blog-post">
+              <div>
+                <p class="blog-post-meta">PDF</p>
+                <h2><a href="{{ pdf_url | escape }}" target="_blank" rel="noopener noreferrer">{{ file.basename | escape }}</a></h2>
+              </div>
+              <div class="blog-post-actions">
+                <a class="action-link" href="{{ pdf_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Read {{ file.basename | escape }} as PDF">Read PDF <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+              {% endif %}
+            {% endfor %}
+            {% if pdf_count == 0 %}
+              <p class="blog-hint">No PDF notes published yet.</p>
+            {% endif %}
           </div>
           <p class="blog-hint">PDF links open in a new tab for reading in your browser.</p>
         </div>
