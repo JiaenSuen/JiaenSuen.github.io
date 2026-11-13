@@ -1,6 +1,6 @@
 PAPER / GITHUB LINK PLACEHOLDERS
 
-All placeholder links are in index.html and currently use:
+Unavailable links are placeholders in index.html and currently use:
   href="#" aria-disabled="true" class="action-link is-placeholder"
 
 When a real URL is available:
@@ -20,10 +20,10 @@ JOURNAL PAPERS
 
 CONFERENCE PAPERS
 - IEEE ICCE-TW 2026 — Lightweight Stereo Depth Evaluation under Small-Baseline Domain Shift for Indoor Robotics
-  - Paper: https://ieeexplore.ieee.org/document/11652706
+  - Paper: https://ieeexplore.ieee.org/abstract/document/11652706
   - GitHub
 - ARIS 2026 — Analyzing the Domain Shift Problem in Stereo Depth Estimation Models for Embedded Systems
-  - Paper
+  - Paper: https://ieeexplore.ieee.org/abstract/document/11734409
   - GitHub
 - TANET 2025 — An Intelligent Housing Rental Analytics Platform Based on Ensemble Learning and Residual-Aware Stacking
   - Paper
@@ -37,8 +37,5 @@ SELECTED PROJECTS
   - Project
   - GitHub
 - Robotic Reinforcement Learning Sandbox
-  - Project
-  - GitHub
-- Structure-Aware Metaheuristic Search for Coupled Procurement–Routing Optimization
   - Project
   - GitHub

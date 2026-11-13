@@ -20,7 +20,7 @@ Run locally
     http://localhost:8000
 
 Updating publication / project links
-  Paper and GitHub links currently use placeholder anchors with aria-disabled="true".
+  Unavailable paper, project, and GitHub links use placeholder anchors with aria-disabled="true".
   Replace href="#" with the real URL, remove aria-disabled="true", and remove the is-placeholder class.
 
 Content layout
