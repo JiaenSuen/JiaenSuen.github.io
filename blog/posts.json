@@ -1,0 +1,7 @@
+{
+  "Stereo Vision Foundations 01": {
+    "category": "Stereo Vision",
+    "description": "An introduction to binocular geometry, disparity-to-depth conversion, correspondence challenges, and classical Marr–Poggio and SAD matching.",
+    "pages": 2
+  }
+}
